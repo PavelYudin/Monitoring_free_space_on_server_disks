@@ -1,0 +1,21 @@
+{
+    "env": {
+        "node": true,
+        "es2019": true
+    },
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "project": ["tsconfig.json"]
+    },
+    "rules": {
+        "eqeqeq": "error",
+        "curly": ["error", "all"],
+        "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+        "no-multiple-empty-lines": "error",
+        "no-var": "error",
+        "no-useless-constructor": "error"
+    }
+}

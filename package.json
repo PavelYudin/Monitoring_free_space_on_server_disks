@@ -1,0 +1,34 @@
+{
+  "name": "monitoring_memory_on_disks",
+  "version": "1.0.0",
+  "description": "Checking disk space with email notification",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint  *.ts",
+    "eslint:dump": "eslint --print-config ./.eslintrc.json"
+  },
+  "author": "Yudin.P.",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
+    "@types/node": "^18.15.10",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.3",
+    "emailjs": "^4.0.1"
+  }
+}
